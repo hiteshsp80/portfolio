@@ -37,7 +37,20 @@
         nav ul li {
             list-style: none;
             margin: 0 10px;
+
+        }
+
+        nav ul li a {
             text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+            font-size: 1.04rem;
+            /* background-color: #fff;
+            border-radius: 5px;
+            padding: 5px; */
         }
 
         .left {
@@ -48,20 +61,21 @@
         .firstSection {
             display: flex;
             justify-content: space-around;
+            align-items: center;
             margin: 80px 0;
         }
 
         .firstSection>div {
-            width: 30%;
+            width: 40%;
             /* background-color: red; */
         }
 
         .leftSection {
             font-size: 2rem;
-            background-color: red;
+            /* background-color: red; */
 
             /* font-weight: bold; */
-            margin: 70px 0;
+            /* margin: 70px 0; */
         }
 
         .rightSection img {
@@ -70,6 +84,10 @@
         }
 
         .purple {
+            color: purple;
+        }
+
+        #element {
             color: purple;
         }
     </style>
@@ -94,9 +112,9 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, I am <span class="purple">Hitesh</span> <br>
+                Hi, My Name is <span class="purple">Hitesh</span> <br>
                 <div>and I am a passionate</div>
-                <div>Web Developer.</div>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="dp.png" alt>
@@ -104,6 +122,14 @@
 
         </section>
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer, ', 'Web Designer, ', 'Freelancer, ', 'Blogger, ', 'Youtuber, ', 'Teacher, ', 'Student, ', 'Learner'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
