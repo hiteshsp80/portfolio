@@ -37,11 +37,31 @@
         nav ul li {
             list-style: none;
             margin: 0 10px;
+            text-decoration: none;
         }
 
         .left {
             font-size: 1.5rem;
             font-weight: bold;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .leftSection {
+            width: 50%;
+            background-color: #fff;
+            height: 500px;
+            font-size: 2rem;
+        }
+
+        .rightSection {
+            width: 30%;
+            /* background-color: #fff; */
+            height: 500px;
         }
     </style>
 </head>
@@ -61,6 +81,19 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am Hitesh and I am a web developer.
+            </div>
+            <div class="rightSection">
+                <img src="dp.png" alt style="
+                    width: 70%;">
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>
